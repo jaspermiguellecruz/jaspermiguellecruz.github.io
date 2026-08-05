@@ -786,7 +786,7 @@
   <section id="about">
     <span class="section-label">04 — about me</span>
     <div class="about-text">
-      <p>I'm a recent IT graduate from Pampanga State University with hands-on experience across data encoding, IT support, and full-stack web development. My capstone project, a DepEd enrollment system, took me through the full stack — from database design to deployment.</p>
+      <p>I'm a recent IT graduate from Pampanga State University with hands-on experience across data encoding, IT support, and full-stack web development. My capstone project, a enrollment system, took me through the full stack — from database design to deployment.</p>
       <p>Right now I'm looking for a first full-time role where I can keep building real things, and I'm actively exploring AI and how to apply it to practical problems.</p>
     </div>
   </section>
@@ -845,16 +845,16 @@
       {
         badges: ['Self Project ❯', 'React · Node · PostgreSQL'],
         icon: '🎓', iconBg: '#5a3d8a',
-        title: 'DepEd Online Enrollment System',
-        desc: 'A web-based enrollment platform for Philippine public schools — online student enrollment, application approval, record management, dashboard analytics, Excel export, and official form printing. Built with React, Vite, Tailwind, Node.js, Express, Prisma, and PostgreSQL, with JWT/bcrypt auth, audit logging, and role-based access.',
-        links: { type: 'web', href: 'https://github.com/paooolito' }
+        title: 'Online Enrollment System',
+        desc: 'A web-based enrollment platform for small public schools — online student enrollment, application approval, record management, dashboard analytics, Excel export, and official form printing. Built with React, Vite, Tailwind, Node.js, Express, Prisma, and PostgreSQL, with JWT/bcrypt auth, audit logging, and role-based access.',
+        links: { type: 'web', href: 'https://enrollment-system-woad.vercel.app/enroll', codeHref: 'https://github.com/paooolito/Enrollment-system' }
       },
       {
         badges: ['Personal Site ❯'],
         icon: '🧑‍💻', iconBg: '#2b5a8a',
         title: 'This Portfolio',
         desc: 'This site — a single-page portfolio built with plain HTML, CSS, and JavaScript, with dark mode, scroll-spy navigation, and an interactive project card stack.',
-        links: { type: 'web', href: 'https://github.com/paooolito' }
+        links: { type: 'web', href: 'https://paooolito.github.io/', codeHref: 'https://github.com/paooolito/paooolito.github.io' }
       }
     ];
 
@@ -871,7 +871,8 @@
           '<span class="sb-text"><span class="sb-label">Get it on</span><span class="sb-value">Google Play</span></span></a>' +
           '</div>';
       }
-      return '<div class="pcard-links"><a class="web-badge" href="' + links.href + '" onclick="event.stopPropagation()">' + webIcon + ' visit site ↗</a></div>';
+      var codeBadge = links.codeHref ? '<a class="web-badge" href="' + links.codeHref + '" onclick="event.stopPropagation()">' + webIcon + ' view code ↗</a>' : '';
+    return '<div class="pcard-links"><a class="web-badge" href="' + links.href + '" onclick="event.stopPropagation()">' + webIcon + ' visit site ↗</a>' + codeBadge + '</div>';
     }
 
     function render() {
