@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jasper Miguelle Cruz — IT Developer Portfolio</title>
+<title>Jasper Miguelle Cruz</title>
 <meta name="description" content="Portfolio of Jasper Miguelle Cruz, BS Information Technology graduate from Pampanga State University. Web development, systems, and IT support.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -541,20 +541,22 @@
     box-shadow: 0 18px 35px -28px rgba(0,0,0,0.5);
   }
 
-  .cert-icon {
-    width: 1.95rem;
-    height: 1.95rem;
-    border-radius: 0.55rem;
-    display: grid;
-    place-items: center;
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--ink);
-    flex-shrink: 0;
-    background: var(--g100);
-    border: 1px solid var(--g200);
-  }
+.cert-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.7rem;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #111;
+  flex-shrink: 0;
+  background: #fff;
+  border: 1px solid var(--g200);
+  box-shadow: 0 4px 12px -6px rgba(0,0,0,0.4);
+  margin: 0 auto;
+}
 
   .cert-card {
     display: grid;
@@ -564,20 +566,22 @@
     height: 100%;
   }
 
-  .cert-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100%;
-    gap: 0.6rem;
-  }
+.cert-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
+  gap: 0.6rem;
+}
 
-  .cert-name {
-    font-weight: 600;
-    font-size: 0.74rem;
-    line-height: 1.3;
-    color: var(--ink);
-  }
+.cert-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
 
   .cert-issuer {
     font-family: var(--font-mono);
@@ -680,7 +684,7 @@
         <div class="stat-label">Roles worked</div>
       </div>
       <div class="stat-cell">
-        <div class="stat-value" style="font-size:0.95rem;">Ongoing</div>
+        <div class="stat-value" style="font-size:0.95rem;">1+</div>
         <div class="stat-label">Certifications</div>
       </div>
     </div>
@@ -732,15 +736,6 @@
           <div class="timeline-org">IVEDECO, Imus, Cavite</div>
           <p class="timeline-desc">Encoded and processed client savings and cash deposit transactions into bank accounts, ensuring timely and accurate records. Organized and corrected records in Excel, enhancing accuracy and documentation.</p>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2022 – 2026</div>
-        <div>
-          <h3 class="timeline-role">BS Information Technology</h3>
-          <div class="timeline-org">Pampanga State University</div>
-          <p class="timeline-desc">Coursework in web development, databases, and software engineering. Capstone: DepEd Online Enrollment System, a full-stack enrollment management platform for public schools.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -770,16 +765,19 @@
     <span class="section-label">03 — certifications</span>
     <div class="cert-list">
       <div class="cert-item">
-        <div class="cert-card">
-          <div class="cert-icon">…</div>
-          <div class="cert-body">
-            <div>
-              <div class="cert-name">Currently pursuing certifications</div>
-              <div class="cert-issuer">Check back soon</div>
-            </div>
-          </div>
-        </div>
+  <div class="cert-card">
+    <div class="cert-icon" style="padding:0; overflow:hidden; background:none; border:none;">
+    <img src="cert-genai.png" alt="IBM SkillsBuild Generative AI badge" style="width:100%;height:100%;object-fit:cover;">
+</div>
+    <div class="cert-body">
+      <div>
+        <div class="cert-name">Getting Started with Generative AI</div>
+        <div class="cert-issuer">IBM SkillsBuild</div>
       </div>
+      <a class="cert-verify" href="https://www.credly.com/users/jasper-miguelle-cruz" target="_blank" rel="noopener">〈 verify 〉</a>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 
@@ -845,7 +843,7 @@
 
     var projects = [
       {
-        badges: ['Capstone Project ❯', 'React · Node · PostgreSQL'],
+        badges: ['Self Project ❯', 'React · Node · PostgreSQL'],
         icon: '🎓', iconBg: '#5a3d8a',
         title: 'DepEd Online Enrollment System',
         desc: 'A web-based enrollment platform for Philippine public schools — online student enrollment, application approval, record management, dashboard analytics, Excel export, and official form printing. Built with React, Vite, Tailwind, Node.js, Express, Prisma, and PostgreSQL, with JWT/bcrypt auth, audit logging, and role-based access.',
