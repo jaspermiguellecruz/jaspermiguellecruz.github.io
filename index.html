@@ -620,16 +620,19 @@
 <aside class="sidebar">
   <div>
     <div class="brand">Jasper Miguelle Cruz</div>
-    <div class="nav-group">
+    <nav class="nav-group">
       <a class="nav-item active" href="#home"><span class="arrow">→</span>Me</a>
       <a class="nav-item" href="#projects"><span class="arrow">→</span>Projects</a>
       <a class="nav-item" href="#experience"><span class="arrow">→</span>Experience</a>
       <a class="nav-item" href="#stack"><span class="arrow">→</span>Stack</a>
       <a class="nav-item" href="#certifications"><span class="arrow">→</span>Certifications</a>
       <a class="nav-item" href="#about"><span class="arrow">→</span>About Me</a>
-    </div>
+    </nav>
   </div>
-  <button class="theme-toggle" id="themeToggleDesktop">◐ theme</button>
+  <div style="display:flex; flex-direction:column; gap:0.5rem;">
+    <a class="theme-toggle" href="resume.pdf" target="_blank" rel="noopener" style="text-decoration:none; text-align:center;">↓ resume</a>
+    <button class="theme-toggle" id="themeToggleDesktop">◐ theme</button>
+  </div>
 </aside>
 
 <div class="topbar">
@@ -641,7 +644,7 @@
     <a href="#certifications">certs</a>
     <a href="#about">about</a>
   </nav>
-  <button class="theme-toggle" id="themeToggleMobile">◐</button>
+  <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle dark mode">◐</button>
 </div>
 
 <main class="main">
@@ -650,9 +653,6 @@
     <div class="hero">
       <div class="avatar-wrap fade-up" style="animation-delay:40ms">
        <img src="avatar.jpg" alt="Jasper Miguelle Cruz" style="width:100%;height:100%;object-fit:cover;display:block;">
-          <rect width="100" height="100" fill="var(--g200)"/>
-          <circle cx="50" cy="38" r="17" fill="var(--g300)"/>
-          <path d="M18 100 C18 72 34 60 50 60 C66 60 82 72 82 100 Z" fill="var(--g300)"/>
       </div>
       <div>
         <h1 class="pixel-title fade-up" style="animation-delay:140ms">Jasper Cruz</h1>
@@ -738,6 +738,7 @@
           <p class="timeline-desc">Encoded and processed client savings and cash deposit transactions into bank accounts, ensuring timely and accurate records. Organized and corrected records in Excel, enhancing accuracy and documentation.</p>
         </div>
     </div>
+    </div><!-- closes .timeline -->
   </section>
 
   <hr class="rule" style="margin-top:3rem;">
